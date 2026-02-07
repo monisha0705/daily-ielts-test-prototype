@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Daily IELTS Test</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container" id="screen-1">
+    <h1>Today’s Daily Test</h1>
+    <p>10–15 minutes</p>
+    <p>Your IELTS preparation for today is ready.<br>
+       Complete today’s test to stay consistent.</p>
+    <button onclick="goToScreen(2)">Start Today’s Test</button>
+  </div>
+
+  <div class="container hidden" id="screen-2">
+    <h1>Choose Today’s Practice</h1>
+    <div class="card">
+      <h3>Option A</h3>
+      <p>Listening + Reading</p>
+      <p>10–12 minutes</p>
+      <button onclick="goToScreen(3)">Choose Option A</button>
+    </div>
+    <div class="card">
+      <h3>Option B</h3>
+      <p>Speaking + Writing</p>
+      <p>12–15 minutes</p>
+      <button onclick="goToScreen(3)">Choose Option B</button>
+    </div>
+  </div>
+
+  <div class="container hidden" id="screen-3">
+    <h1>Daily Test – In Progress</h1>
+    <p>Question 2 of 6</p>
+    <p>This is not a mock test.<br>Focus on learning.</p>
+    <button onclick="goToScreen(4)">Submit Test</button>
+  </div>
+
+  <div class="container hidden" id="screen-4">
+    <h1>Today’s Practice Completed</h1>
+    <p>Good job! You’ve completed today’s test.</p>
+    <button onclick="goToScreen(5)">View My Score</button>
+    <button onclick="goToScreen(5)">Hide Score & Continue</button>
+  </div>
+
+  <div class="container hidden" id="screen-5">
+    <h1>You’re Done for Today 🎉</h1>
+    <p>Your next daily test will be available tomorrow.</p>
+    <button>Come Back Tomorrow</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
